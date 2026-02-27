@@ -3,6 +3,7 @@
 // Jobsheet 3
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LevelController;
+use App\Http\Controllers\KategoriController;
 
 // Jobsheet 2
 // use App\Http\Controllers\HomeController;
@@ -16,6 +17,7 @@ Route::get('/', function () {
 });
 
 Route::get('/level', [LevelController::class, 'index']);
+Route::get('/kategori', [KategoriController::class, 'index']);
 
 // Jobsheet 2
 /* ======================
